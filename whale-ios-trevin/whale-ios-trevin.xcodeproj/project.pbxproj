@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD07A7121E8046470095B013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7111E8046470095B013 /* AppDelegate.swift */; };
+		DD07A7171E8046470095B013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD07A7151E8046470095B013 /* Main.storyboard */; };
+		DD07A71A1E8046470095B013 /* whale_ios_trevin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7181E8046470095B013 /* whale_ios_trevin.xcdatamodeld */; };
+		DD07A71C1E8046470095B013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD07A71B1E8046470095B013 /* Assets.xcassets */; };
+		DD07A71F1E8046470095B013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD07A71D1E8046470095B013 /* LaunchScreen.storyboard */; };
+		DD07A72A1E8046470095B013 /* whale_ios_trevinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7291E8046470095B013 /* whale_ios_trevinTests.swift */; };
+		DD07A7351E8046470095B013 /* whale_ios_trevinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7341E8046470095B013 /* whale_ios_trevinUITests.swift */; };
+		DD07A74A1E8047220095B013 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7491E8047220095B013 /* AnswerViewController.swift */; };
+		DD07A74C1E8047350095B013 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A74B1E8047350095B013 /* ActivityViewController.swift */; };
+		DD07A7521E8047DC0095B013 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7511E8047DC0095B013 /* APIClient.swift */; };
+		DD07A7541E8049440095B013 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7531E8049440095B013 /* AnswerCell.swift */; };
+		DD07A7571E804E4D0095B013 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7561E804E4D0095B013 /* Router.swift */; };
+		DD07A75A1E804EC50095B013 /* AnswerViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7591E804EC50095B013 /* AnswerViewCellModel.swift */; };
+		DD07A75C1E804EE40095B013 /* ActivityViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A75B1E804EE40095B013 /* ActivityViewCellModel.swift */; };
+		DD07A75E1E804F920095B013 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A75D1E804F920095B013 /* ActivityCell.swift */; };
+		DD07A7621E80545C0095B013 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7611E80545C0095B013 /* ProfileViewController.swift */; };
+		DD07A7651E8057580095B013 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7641E8057580095B013 /* SignUpViewController.swift */; };
+		DD07A7671E8057640095B013 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7661E8057640095B013 /* SignInViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD07A7261E8046470095B013 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD07A7061E8046470095B013 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD07A70D1E8046470095B013;
+			remoteInfo = "whale-ios-trevin";
+		};
+		DD07A7311E8046470095B013 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD07A7061E8046470095B013 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD07A70D1E8046470095B013;
+			remoteInfo = "whale-ios-trevin";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD07A70E1E8046470095B013 /* whale-ios-trevin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whale-ios-trevin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD07A7111E8046470095B013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "whale-ios-trevin/AppDelegate.swift"; sourceTree = "<group>"; };
+		DD07A7161E8046470095B013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD07A7191E8046470095B013 /* whale_ios_trevin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = whale_ios_trevin.xcdatamodel; sourceTree = "<group>"; };
+		DD07A71B1E8046470095B013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD07A71E1E8046470095B013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD07A7201E8046470095B013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD07A7251E8046470095B013 /* whale-ios-trevinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "whale-ios-trevinTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD07A7291E8046470095B013 /* whale_ios_trevinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whale_ios_trevinTests.swift; sourceTree = "<group>"; };
+		DD07A72B1E8046470095B013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD07A7301E8046470095B013 /* whale-ios-trevinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "whale-ios-trevinUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD07A7341E8046470095B013 /* whale_ios_trevinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whale_ios_trevinUITests.swift; sourceTree = "<group>"; };
+		DD07A7361E8046470095B013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD07A7491E8047220095B013 /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		DD07A74B1E8047350095B013 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		DD07A7511E8047DC0095B013 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		DD07A7531E8049440095B013 /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		DD07A7561E804E4D0095B013 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		DD07A7591E804EC50095B013 /* AnswerViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewCellModel.swift; sourceTree = "<group>"; };
+		DD07A75B1E804EE40095B013 /* ActivityViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewCellModel.swift; sourceTree = "<group>"; };
+		DD07A75D1E804F920095B013 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		DD07A7611E80545C0095B013 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DD07A7641E8057580095B013 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DD07A7661E8057640095B013 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD07A70B1E8046470095B013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD07A7221E8046470095B013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD07A72D1E8046470095B013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD07A7051E8046470095B013 = {
+			isa = PBXGroup;
+			children = (
+				DD07A7101E8046470095B013 /* whale-ios-trevin */,
+				DD07A7111E8046470095B013 /* AppDelegate.swift */,
+				DD07A7281E8046470095B013 /* whale-ios-trevinTests */,
+				DD07A7331E8046470095B013 /* whale-ios-trevinUITests */,
+				DD07A70F1E8046470095B013 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD07A70F1E8046470095B013 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A70E1E8046470095B013 /* whale-ios-trevin.app */,
+				DD07A7251E8046470095B013 /* whale-ios-trevinTests.xctest */,
+				DD07A7301E8046470095B013 /* whale-ios-trevinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD07A7101E8046470095B013 /* whale-ios-trevin */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7421E8046A20095B013 /* Extensions */,
+				DD07A7431E8046A90095B013 /* UI */,
+				DD07A74D1E80474F0095B013 /* Networking */,
+				DD07A74E1E8047730095B013 /* Supporting Files */,
+			);
+			path = "whale-ios-trevin";
+			sourceTree = "<group>";
+		};
+		DD07A7281E8046470095B013 /* whale-ios-trevinTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7291E8046470095B013 /* whale_ios_trevinTests.swift */,
+				DD07A72B1E8046470095B013 /* Info.plist */,
+			);
+			path = "whale-ios-trevinTests";
+			sourceTree = "<group>";
+		};
+		DD07A7331E8046470095B013 /* whale-ios-trevinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7341E8046470095B013 /* whale_ios_trevinUITests.swift */,
+				DD07A7361E8046470095B013 /* Info.plist */,
+			);
+			path = "whale-ios-trevinUITests";
+			sourceTree = "<group>";
+		};
+		DD07A7421E8046A20095B013 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		DD07A7431E8046A90095B013 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7441E8046B70095B013 /* Cells */,
+				DD07A7451E8046BE0095B013 /* Storyboards */,
+				DD07A7461E8046D40095B013 /* Scenes */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		DD07A7441E8046B70095B013 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7551E8049480095B013 /* AnswerCell */,
+				DD07A75F1E804F950095B013 /* ActivityCell */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		DD07A7451E8046BE0095B013 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7151E8046470095B013 /* Main.storyboard */,
+				DD07A71D1E8046470095B013 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		DD07A7461E8046D40095B013 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7691E80576E0095B013 /* Sign Up Scene */,
+				DD07A7681E8057680095B013 /* Sign In Scene */,
+				DD07A7631E8054E00095B013 /* Profile Scene */,
+				DD07A7471E8046ED0095B013 /* Answer Scene */,
+				DD07A7481E8046FB0095B013 /* Activity Scene */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		DD07A7471E8046ED0095B013 /* Answer Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7491E8047220095B013 /* AnswerViewController.swift */,
+			);
+			name = "Answer Scene";
+			sourceTree = "<group>";
+		};
+		DD07A7481E8046FB0095B013 /* Activity Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A74B1E8047350095B013 /* ActivityViewController.swift */,
+			);
+			name = "Activity Scene";
+			sourceTree = "<group>";
+		};
+		DD07A74D1E80474F0095B013 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7581E804EB20095B013 /* Models */,
+				DD07A7511E8047DC0095B013 /* APIClient.swift */,
+				DD07A7561E804E4D0095B013 /* Router.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		DD07A74E1E8047730095B013 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A71B1E8046470095B013 /* Assets.xcassets */,
+				DD07A7201E8046470095B013 /* Info.plist */,
+				DD07A7181E8046470095B013 /* whale_ios_trevin.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD07A7551E8049480095B013 /* AnswerCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7531E8049440095B013 /* AnswerCell.swift */,
+			);
+			name = AnswerCell;
+			sourceTree = "<group>";
+		};
+		DD07A7581E804EB20095B013 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7591E804EC50095B013 /* AnswerViewCellModel.swift */,
+				DD07A75B1E804EE40095B013 /* ActivityViewCellModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DD07A75F1E804F950095B013 /* ActivityCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A75D1E804F920095B013 /* ActivityCell.swift */,
+			);
+			name = ActivityCell;
+			sourceTree = "<group>";
+		};
+		DD07A7631E8054E00095B013 /* Profile Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7611E80545C0095B013 /* ProfileViewController.swift */,
+			);
+			name = "Profile Scene";
+			sourceTree = "<group>";
+		};
+		DD07A7681E8057680095B013 /* Sign In Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7661E8057640095B013 /* SignInViewController.swift */,
+			);
+			name = "Sign In Scene";
+			sourceTree = "<group>";
+		};
+		DD07A7691E80576E0095B013 /* Sign Up Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A7641E8057580095B013 /* SignUpViewController.swift */,
+			);
+			name = "Sign Up Scene";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD07A70D1E8046470095B013 /* whale-ios-trevin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD07A7391E8046470095B013 /* Build configuration list for PBXNativeTarget "whale-ios-trevin" */;
+			buildPhases = (
+				DD07A70A1E8046470095B013 /* Sources */,
+				DD07A70B1E8046470095B013 /* Frameworks */,
+				DD07A70C1E8046470095B013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "whale-ios-trevin";
+			productName = "whale-ios-trevin";
+			productReference = DD07A70E1E8046470095B013 /* whale-ios-trevin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD07A7241E8046470095B013 /* whale-ios-trevinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD07A73C1E8046470095B013 /* Build configuration list for PBXNativeTarget "whale-ios-trevinTests" */;
+			buildPhases = (
+				DD07A7211E8046470095B013 /* Sources */,
+				DD07A7221E8046470095B013 /* Frameworks */,
+				DD07A7231E8046470095B013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD07A7271E8046470095B013 /* PBXTargetDependency */,
+			);
+			name = "whale-ios-trevinTests";
+			productName = "whale-ios-trevinTests";
+			productReference = DD07A7251E8046470095B013 /* whale-ios-trevinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD07A72F1E8046470095B013 /* whale-ios-trevinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD07A73F1E8046470095B013 /* Build configuration list for PBXNativeTarget "whale-ios-trevinUITests" */;
+			buildPhases = (
+				DD07A72C1E8046470095B013 /* Sources */,
+				DD07A72D1E8046470095B013 /* Frameworks */,
+				DD07A72E1E8046470095B013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD07A7321E8046470095B013 /* PBXTargetDependency */,
+			);
+			name = "whale-ios-trevinUITests";
+			productName = "whale-ios-trevinUITests";
+			productReference = DD07A7301E8046470095B013 /* whale-ios-trevinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD07A7061E8046470095B013 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Trevin Wisaksana";
+				TargetAttributes = {
+					DD07A70D1E8046470095B013 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9ME882KZTA;
+						ProvisioningStyle = Automatic;
+					};
+					DD07A7241E8046470095B013 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9ME882KZTA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD07A70D1E8046470095B013;
+					};
+					DD07A72F1E8046470095B013 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9ME882KZTA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD07A70D1E8046470095B013;
+					};
+				};
+			};
+			buildConfigurationList = DD07A7091E8046470095B013 /* Build configuration list for PBXProject "whale-ios-trevin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD07A7051E8046470095B013;
+			productRefGroup = DD07A70F1E8046470095B013 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD07A70D1E8046470095B013 /* whale-ios-trevin */,
+				DD07A7241E8046470095B013 /* whale-ios-trevinTests */,
+				DD07A72F1E8046470095B013 /* whale-ios-trevinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD07A70C1E8046470095B013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD07A71F1E8046470095B013 /* LaunchScreen.storyboard in Resources */,
+				DD07A71C1E8046470095B013 /* Assets.xcassets in Resources */,
+				DD07A7171E8046470095B013 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD07A7231E8046470095B013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD07A72E1E8046470095B013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD07A70A1E8046470095B013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD07A7571E804E4D0095B013 /* Router.swift in Sources */,
+				DD07A74A1E8047220095B013 /* AnswerViewController.swift in Sources */,
+				DD07A75E1E804F920095B013 /* ActivityCell.swift in Sources */,
+				DD07A71A1E8046470095B013 /* whale_ios_trevin.xcdatamodeld in Sources */,
+				DD07A75C1E804EE40095B013 /* ActivityViewCellModel.swift in Sources */,
+				DD07A7671E8057640095B013 /* SignInViewController.swift in Sources */,
+				DD07A74C1E8047350095B013 /* ActivityViewController.swift in Sources */,
+				DD07A7651E8057580095B013 /* SignUpViewController.swift in Sources */,
+				DD07A7121E8046470095B013 /* AppDelegate.swift in Sources */,
+				DD07A7621E80545C0095B013 /* ProfileViewController.swift in Sources */,
+				DD07A7541E8049440095B013 /* AnswerCell.swift in Sources */,
+				DD07A75A1E804EC50095B013 /* AnswerViewCellModel.swift in Sources */,
+				DD07A7521E8047DC0095B013 /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD07A7211E8046470095B013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD07A72A1E8046470095B013 /* whale_ios_trevinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD07A72C1E8046470095B013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD07A7351E8046470095B013 /* whale_ios_trevinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD07A7271E8046470095B013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD07A70D1E8046470095B013 /* whale-ios-trevin */;
+			targetProxy = DD07A7261E8046470095B013 /* PBXContainerItemProxy */;
+		};
+		DD07A7321E8046470095B013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD07A70D1E8046470095B013 /* whale-ios-trevin */;
+			targetProxy = DD07A7311E8046470095B013 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD07A7151E8046470095B013 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD07A7161E8046470095B013 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD07A71D1E8046470095B013 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD07A71E1E8046470095B013 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD07A7371E8046470095B013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD07A7381E8046470095B013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD07A73A1E8046470095B013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = "whale-ios-trevin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.whale-ios-trevin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DD07A73B1E8046470095B013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = "whale-ios-trevin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.whale-ios-trevin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DD07A73D1E8046470095B013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = "whale-ios-trevinTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.whale-ios-trevinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whale-ios-trevin.app/whale-ios-trevin";
+			};
+			name = Debug;
+		};
+		DD07A73E1E8046470095B013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = "whale-ios-trevinTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.whale-ios-trevinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whale-ios-trevin.app/whale-ios-trevin";
+			};
+			name = Release;
+		};
+		DD07A7401E8046470095B013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = "whale-ios-trevinUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.whale-ios-trevinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "whale-ios-trevin";
+			};
+			name = Debug;
+		};
+		DD07A7411E8046470095B013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9ME882KZTA;
+				INFOPLIST_FILE = "whale-ios-trevinUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trevinwisaksana.whale-ios-trevinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "whale-ios-trevin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD07A7091E8046470095B013 /* Build configuration list for PBXProject "whale-ios-trevin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD07A7371E8046470095B013 /* Debug */,
+				DD07A7381E8046470095B013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD07A7391E8046470095B013 /* Build configuration list for PBXNativeTarget "whale-ios-trevin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD07A73A1E8046470095B013 /* Debug */,
+				DD07A73B1E8046470095B013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD07A73C1E8046470095B013 /* Build configuration list for PBXNativeTarget "whale-ios-trevinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD07A73D1E8046470095B013 /* Debug */,
+				DD07A73E1E8046470095B013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD07A73F1E8046470095B013 /* Build configuration list for PBXNativeTarget "whale-ios-trevinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD07A7401E8046470095B013 /* Debug */,
+				DD07A7411E8046470095B013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD07A7181E8046470095B013 /* whale_ios_trevin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD07A7191E8046470095B013 /* whale_ios_trevin.xcdatamodel */,
+			);
+			currentVersion = DD07A7191E8046470095B013 /* whale_ios_trevin.xcdatamodel */;
+			path = whale_ios_trevin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DD07A7061E8046470095B013 /* Project object */;
+}
