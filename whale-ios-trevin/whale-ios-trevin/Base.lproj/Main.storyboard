@@ -111,10 +111,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="signInButtonAction:" destination="dtx-LQ-bJW" eventType="touchUpInside" id="PEO-Ua-CMc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hq-5c-J0n">
+                                <rect key="frame" x="107" y="530" width="161" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Don't have an account?"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="gtP-Vr-fHJ" id="WYR-6p-h7h"/>
+                        <outlet property="passwordTextField" destination="wj4-9v-EWn" id="a8B-QS-IyD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fd6-lU-qKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,10 +191,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUpButtonAction:" destination="wfc-QK-zOG" eventType="touchUpInside" id="xdG-ax-N3J"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="vPb-q7-qGr" id="fuJ-SH-Dgv"/>
+                        <outlet property="emailTextField" destination="EXN-u1-tmK" id="Gam-K7-RYc"/>
+                        <outlet property="passwordTextField" destination="2Qm-7q-KFE" id="EzE-9K-ZdS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCs-IT-7wn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

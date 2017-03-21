@@ -10,6 +10,16 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
+    @IBOutlet weak var emailTextField: UITextField!
     
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
+    @IBAction func signInButtonAction(_ sender: UIButton) {
+        // Transition to the Activity View Controller
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+    }
     
 }

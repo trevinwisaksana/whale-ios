@@ -10,6 +10,15 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+ 
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    
+    @IBAction func signUpButtonAction(_ sender: UIButton) {
+        
+    }
     
     
 }
