@@ -16,10 +16,20 @@ class SignInViewController: UIViewController {
     
     
     @IBAction func signInButtonAction(_ sender: UIButton) {
-        // Transition to the Activity View Controller
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        // Check if the email and password text fields are blank
+        guard let email = emailTextField.text else {
+            return
+        }
         
+        guard let password = passwordTextField.text else {
+            return
+        }
+        
+        APIClient.loginUser(email: email, password: password) { (JSON) in
+            print(JSON)
+        }
         
     }
+    
     
 }

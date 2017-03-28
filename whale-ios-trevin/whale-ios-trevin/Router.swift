@@ -12,35 +12,131 @@ import Alamofire
 enum Router: URLRequestConvertible {
     
     // Base URL of API
-    static let baseURL: String = "https://whale2-elixir.herokuapp.com"
+    static let baseURL: String = "https://whale2-elixir.herokuapp.com/api/v1"
     
     // Different cases for each router
-    case user
-    case session
-    case question
-    case answerQuestion
-    case answerComment
-    case answerLike
+    case getUsers
+    case getAnswers
+    case getAnswerComments(String)
+    case getAnswerLikes(String)
+    case getMyQuestions
+
+    case createUser(firstName: String,
+                    lastName: String,
+                    email: String,
+                    password: String,
+                    username: String)
+    
+    case postAnswer(String)
+    case postQuestion
+    
+    case loginUser(email: String,
+                   password: String)
     
     var method: HTTPMethod {
         switch self {
-        case .user, .question, .answerQuestion, .answerComment, .answerLike:
-            return .post
-        case .session:
+        case .getUsers,
+             .getAnswers,
+             .getAnswerLikes,
+             .getAnswerComments,
+             .getMyQuestions:
             return .get
+            
+        case .createUser,
+             .loginUser,
+             .postAnswer,
+             .postQuestion:
+            return .post
+        }
+    }
+    
+    var path: String {
+        switch self {
+        case .getUsers:
+            return "/users"
+        case .createUser:
+            return "/users"
+        case .getAnswers:
+            return "/answers"
+        case .loginUser:
+            return "/sessions"
+        case .getAnswerComments(let answer_id):
+            return "/answers/\(answer_id)/comments"
+        case .getAnswerLikes(let question_id):
+            return "/answers/\(question_id)/likes"
+        case .postAnswer(let question_id):
+            return "questions/\(question_id)/answers"
+        case .getMyQuestions:
+            return "/questions"
+        case .postQuestion:
+            return "/questions"
         }
     }
     
     // Returns a URLRequest
     func asURLRequest() throws -> URLRequest {
+        // Set the URL-parameters
+        let parameters: [String: Any] = {
+            switch self {
+            case .getUsers,
+                 .getAnswers,
+                 .getAnswerComments,
+                 .getAnswerLikes,
+                 .getMyQuestions:
+                return [:]
+                
+            case .createUser(let first_name, let last_name, let email, let password, let username):
+                return ["first_name": first_name,
+                        "last_name" : last_name,
+                        "email" : email,
+                        "password" : password,
+                        "username" : username]
+                
+            case .postAnswer:
+                return [:]
+                
+            case .postQuestion:
+                return [:]
+                
+            case .loginUser(let email, let password):
+                return ["email" : email,
+                        "password" : password]
+                
+            }
+        }()
+        
+        // Sets the header for the request
+        // TODO: Exhaust all the cases
+        let headers: [String : String] = {
+            switch self {
+            case .getAnswers:
+                return [:]
+            default:
+                return [:]
+            }
+        }()
+        
         // Sets as a URL
         let url = try Router.baseURL.asURL()
-        // Sends the request
-        var request = URLRequest(url: url)
-        // Assigns the HTTP method depending on the case
+        
+        // Creating a request
+        var request = URLRequest(url: url.appendingPathComponent(path))
+        // Mutates the request to change the HTTPRequest method
         request.httpMethod = method.rawValue
         
-        return request
+        // Adds the headers to the request
+        headers.forEach { (key, value) in
+            request.setValue(value, forHTTPHeaderField: key)
+        }
+        
+        // Sends the request
+        switch self {
+        case .createUser:
+            return try JSONEncoding.default.encode(request, with: parameters)
+        default:
+            return try URLEncoding.default.encode(request, with: parameters)
+        }
+
     }
     
 }

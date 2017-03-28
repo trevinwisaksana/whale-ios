@@ -7,6 +7,8 @@ target 'whale-ios-trevin' do
 
   # Pods for whale-ios-trevin
   pod 'Alamofire'
+  pod 'SDWebImage', '~>3.8'
+  pod 'SwiftyJSON'
 
   target 'whale-ios-trevinTests' do
     inherit! :search_paths

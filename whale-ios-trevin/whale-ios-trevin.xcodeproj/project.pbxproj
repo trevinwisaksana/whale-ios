@@ -28,6 +28,11 @@
 		DD07A7621E80545C0095B013 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7611E80545C0095B013 /* ProfileViewController.swift */; };
 		DD07A7651E8057580095B013 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7641E8057580095B013 /* SignUpViewController.swift */; };
 		DD07A7671E8057640095B013 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7661E8057640095B013 /* SignInViewController.swift */; };
+		DD07A76B1E82ECD10095B013 /* AnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD07A76A1E82ECD10095B013 /* AnswerCell.xib */; };
+		DD07A76D1E82ECDB0095B013 /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD07A76C1E82ECDB0095B013 /* ActivityCell.xib */; };
+		DD07A7701E82F0BC0095B013 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A76F1E82F0BC0095B013 /* DesignableView.swift */; };
+		DD07A7721E82F12A0095B013 /* UserHeadersAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7711E82F12A0095B013 /* UserHeadersAdapter.swift */; };
+		DD07A7761E82F49B0095B013 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7751E82F49B0095B013 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,11 @@
 		DD07A7611E80545C0095B013 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DD07A7641E8057580095B013 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DD07A7661E8057640095B013 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		DD07A76A1E82ECD10095B013 /* AnswerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerCell.xib; sourceTree = "<group>"; };
+		DD07A76C1E82ECDB0095B013 /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
+		DD07A76F1E82F0BC0095B013 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		DD07A7711E82F12A0095B013 /* UserHeadersAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHeadersAdapter.swift; sourceTree = "<group>"; };
+		DD07A7751E82F49B0095B013 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F9ECED1C45D6818B4D638B97 /* Pods_whale_ios_trevinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_ios_trevinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD717ACDD4188A2B2172313F /* Pods_whale_ios_trevin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_ios_trevin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -196,6 +206,7 @@
 		DD07A7431E8046A90095B013 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DD07A76E1E82F0B20095B013 /* Designables */,
 				DD07A7441E8046B70095B013 /* Cells */,
 				DD07A7451E8046BE0095B013 /* Storyboards */,
 				DD07A7461E8046D40095B013 /* Scenes */,
@@ -252,6 +263,7 @@
 		DD07A74D1E80474F0095B013 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				DD07A7711E82F12A0095B013 /* UserHeadersAdapter.swift */,
 				DD07A7561E804E4D0095B013 /* Router.swift */,
 				DD07A7511E8047DC0095B013 /* APIClient.swift */,
 				DD07A7581E804EB20095B013 /* Models */,
@@ -273,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				DD07A7531E8049440095B013 /* AnswerCell.swift */,
+				DD07A76A1E82ECD10095B013 /* AnswerCell.xib */,
 			);
 			name = AnswerCell;
 			sourceTree = "<group>";
@@ -282,6 +295,7 @@
 			children = (
 				DD07A7591E804EC50095B013 /* AnswerViewCellModel.swift */,
 				DD07A75B1E804EE40095B013 /* ActivityViewCellModel.swift */,
+				DD07A7751E82F49B0095B013 /* UserModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -290,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				DD07A75D1E804F920095B013 /* ActivityCell.swift */,
+				DD07A76C1E82ECDB0095B013 /* ActivityCell.xib */,
 			);
 			name = ActivityCell;
 			sourceTree = "<group>";
@@ -316,6 +331,14 @@
 				DD07A7641E8057580095B013 /* SignUpViewController.swift */,
 			);
 			name = "Sign Up Scene";
+			sourceTree = "<group>";
+		};
+		DD07A76E1E82F0B20095B013 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				DD07A76F1E82F0BC0095B013 /* DesignableView.swift */,
+			);
+			name = Designables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,8 +461,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD07A71F1E8046470095B013 /* LaunchScreen.storyboard in Resources */,
+				DD07A76D1E82ECDB0095B013 /* ActivityCell.xib in Resources */,
 				DD07A71C1E8046470095B013 /* Assets.xcassets in Resources */,
 				DD07A7171E8046470095B013 /* Main.storyboard in Resources */,
+				DD07A76B1E82ECD10095B013 /* AnswerCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,12 +631,15 @@
 				DD07A74A1E8047220095B013 /* AnswerViewController.swift in Sources */,
 				DD07A75E1E804F920095B013 /* ActivityCell.swift in Sources */,
 				DD07A71A1E8046470095B013 /* whale_ios_trevin.xcdatamodeld in Sources */,
+				DD07A7701E82F0BC0095B013 /* DesignableView.swift in Sources */,
 				DD07A75C1E804EE40095B013 /* ActivityViewCellModel.swift in Sources */,
 				DD07A7671E8057640095B013 /* SignInViewController.swift in Sources */,
+				DD07A7761E82F49B0095B013 /* UserModel.swift in Sources */,
 				DD07A74C1E8047350095B013 /* ActivityViewController.swift in Sources */,
 				DD07A7651E8057580095B013 /* SignUpViewController.swift in Sources */,
 				DD07A7121E8046470095B013 /* AppDelegate.swift in Sources */,
 				DD07A7621E80545C0095B013 /* ProfileViewController.swift in Sources */,
+				DD07A7721E82F12A0095B013 /* UserHeadersAdapter.swift in Sources */,
 				DD07A7541E8049440095B013 /* AnswerCell.swift in Sources */,
 				DD07A75A1E804EC50095B013 /* AnswerViewCellModel.swift in Sources */,
 				DD07A7521E8047DC0095B013 /* APIClient.swift in Sources */,

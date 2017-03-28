@@ -10,8 +10,6 @@ import UIKit
 
 class AnswerCell: UICollectionViewCell {
     
-    
-    
     //
     var answerCellViewModel: AnswerViewCellModel? {
         didSet {
