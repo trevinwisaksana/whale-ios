@@ -17,7 +17,7 @@ class ProfileViewController: UIViewController {
     
     
     // User information
-    var userInformation: UserModel? {
+    var userInformation: User? {
         didSet {
             
             guard let userInformation = userInformation else {

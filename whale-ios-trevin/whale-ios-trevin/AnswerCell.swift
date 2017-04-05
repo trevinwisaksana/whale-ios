@@ -10,11 +10,10 @@ import UIKit
 
 class AnswerCell: UICollectionViewCell {
     
-    //
-    var answerCellViewModel: AnswerViewCellModel? {
-        didSet {
-            
-        }
-    }
+    @IBOutlet weak var inquiererProfilePicture: UIImageView!
+    
+    @IBOutlet weak var inquiererFullNameLabel: UILabel!
+    
+    @IBOutlet weak var questionLabel: UILabel!
     
 }

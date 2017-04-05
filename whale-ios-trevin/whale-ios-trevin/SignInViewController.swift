@@ -26,7 +26,12 @@ class SignInViewController: UIViewController {
         }
         
         APIClient.loginUser(email: email, password: password) { (JSON) in
-            print(JSON)
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! UITabBarController
+            let appDelegate = UIApplication.shared.delegate as? AppDelegate
+            appDelegate?.window?.rootViewController = tabBarViewController
+            
         }
         
     }

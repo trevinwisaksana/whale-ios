@@ -43,11 +43,14 @@ class SignUpViewController: UIViewController {
                              email: email,
                              password: password,
                              username: username) { (json) in
-            
-            
-            
+                                
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let tabBarViewController = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! UITabBarController
+            let appDelegate = UIApplication.shared.delegate as? AppDelegate
+            appDelegate?.window?.rootViewController = tabBarViewController
                                 
         }
+        
     }
     
 }

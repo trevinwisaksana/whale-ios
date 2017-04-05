@@ -16,7 +16,10 @@ enum Router: URLRequestConvertible {
     
     // Different cases for each router
     case getUsers
-    case getAnswers
+    
+    case getAnswers(perPage: Int,
+                    intpage: Int)
+    
     case getAnswerComments(String)
     case getAnswerLikes(String)
     case getMyQuestions
@@ -75,15 +78,19 @@ enum Router: URLRequestConvertible {
     
     // Returns a URLRequest
     func asURLRequest() throws -> URLRequest {
+        
         // Set the URL-parameters
         let parameters: [String: Any] = {
             switch self {
             case .getUsers,
-                 .getAnswers,
                  .getAnswerComments,
                  .getAnswerLikes,
                  .getMyQuestions:
                 return [:]
+                
+            case .getAnswers(let per_page, let intpage):
+                return ["per_page" : per_page,
+                        "Intpage" : intpage]
                 
             case .createUser(let first_name, let last_name, let email, let password, let username):
                 return ["first_name": first_name,

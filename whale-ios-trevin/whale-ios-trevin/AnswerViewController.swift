@@ -10,11 +10,21 @@ import UIKit
 
 class AnswerViewController: UIViewController {
     
+    @IBOutlet weak var answersCollectionView: UICollectionView!
+    
+    // Contains all the answer models
+    var listOfAnswers: [Answer] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+        APIClient.instance.getAnswers(pageSize: APIClient.pageSize, pageNumber: APIClient.pageNumber) { [weak self] (answers) in
+            // Assigning the answers to the array
+            self?.listOfAnswers = answers
+            // Refresh the collection view
+            self?.answersCollectionView.reloadData()
+        }
+        
     }
-    
-    
     
 }

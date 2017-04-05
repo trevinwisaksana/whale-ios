@@ -12,27 +12,77 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AnswerCell" id="4OO-NM-n87" customClass="AnswerCell" customModule="whale_ios_trevin" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="434" height="227"/>
+            <rect key="frame" x="0.0" y="0.0" width="434" height="421"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="434" height="227"/>
+                <rect key="frame" x="0.0" y="0.0" width="434" height="421"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dAq-Ur-fX6" customClass="DesignableView" customModule="whale_ios_trevin" customModuleProvider="target">
-                        <rect key="frame" x="7.5" y="7.5" width="420" height="208"/>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JBE-Xd-kpu" customClass="DesignableView" customModule="whale_ios_trevin" customModuleProvider="target">
+                        <rect key="frame" x="7" y="17" width="420" height="386"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.10000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAq-Ur-fX6" customClass="DesignableView" customModule="whale_ios_trevin" customModuleProvider="target">
+                        <rect key="frame" x="7" y="14" width="420" height="386"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l0i-ed-Aoe">
-                                <rect key="frame" x="8" y="7" width="32.5" height="30.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0V-QZ-lD9">
+                                <rect key="frame" x="0.0" y="0.0" width="420" height="40"/>
+                                <color key="backgroundColor" red="0.97632796323669158" green="0.98722884517858922" blue="0.99319149824004094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CrM-Hj-xjh"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" verticalHuggingPriority="255" translatesAutoresizingMaskIntoConstraints="NO" id="l0i-ed-Aoe">
+                                <rect key="frame" x="17" y="11" width="18" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="Uyt-fT-cg0"/>
+                                    <constraint firstAttribute="height" constant="20" id="mox-8L-Ev8"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Full name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBc-iH-5kw">
+                                <rect key="frame" x="43" y="13" width="363" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="aVq-JQ-uNo">
+                                <rect key="frame" x="15" y="50" width="391" height="17"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oBc-iH-5kw" secondAttribute="trailing" constant="14" id="6NU-gQ-D1a"/>
+                            <constraint firstItem="G0V-QZ-lD9" firstAttribute="top" secondItem="dAq-Ur-fX6" secondAttribute="top" id="7aQ-2V-gNK"/>
+                            <constraint firstItem="l0i-ed-Aoe" firstAttribute="top" secondItem="dAq-Ur-fX6" secondAttribute="top" constant="11" id="95z-eh-CCD"/>
+                            <constraint firstItem="G0V-QZ-lD9" firstAttribute="leading" secondItem="dAq-Ur-fX6" secondAttribute="leading" id="DWw-px-A5h"/>
+                            <constraint firstItem="aVq-JQ-uNo" firstAttribute="leading" secondItem="dAq-Ur-fX6" secondAttribute="leading" constant="15" id="L57-DB-bJG"/>
+                            <constraint firstItem="oBc-iH-5kw" firstAttribute="leading" secondItem="l0i-ed-Aoe" secondAttribute="trailing" constant="8" id="Mi5-IC-pCf"/>
+                            <constraint firstItem="l0i-ed-Aoe" firstAttribute="leading" secondItem="dAq-Ur-fX6" secondAttribute="leading" constant="17" id="eRJ-nn-NHE"/>
+                            <constraint firstAttribute="trailing" secondItem="G0V-QZ-lD9" secondAttribute="trailing" id="gaP-J4-1N6"/>
+                            <constraint firstAttribute="trailing" secondItem="aVq-JQ-uNo" secondAttribute="trailing" constant="14" id="mVB-ok-e7R"/>
+                            <constraint firstItem="oBc-iH-5kw" firstAttribute="top" secondItem="dAq-Ur-fX6" secondAttribute="top" constant="13" id="uXF-cJ-qTy"/>
+                            <constraint firstItem="aVq-JQ-uNo" firstAttribute="top" secondItem="G0V-QZ-lD9" secondAttribute="bottom" constant="10" id="xEW-ub-uG3"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
                                 <real key="value" value="0.050000000000000003"/>
@@ -47,8 +97,19 @@
                     </view>
                 </subviews>
             </view>
-            <size key="customSize" width="434" height="227"/>
-            <point key="canvasLocation" x="116" y="57.5"/>
+            <constraints>
+                <constraint firstItem="dAq-Ur-fX6" firstAttribute="leading" secondItem="4OO-NM-n87" secondAttribute="leading" constant="7" id="GXb-z1-aHB"/>
+                <constraint firstAttribute="bottom" secondItem="dAq-Ur-fX6" secondAttribute="bottom" constant="21" id="OS9-Hy-r80"/>
+                <constraint firstItem="dAq-Ur-fX6" firstAttribute="top" secondItem="4OO-NM-n87" secondAttribute="top" constant="14" id="Y9p-ZD-PV0"/>
+                <constraint firstAttribute="trailing" secondItem="dAq-Ur-fX6" secondAttribute="trailing" constant="7" id="hcj-1y-Gqv"/>
+            </constraints>
+            <size key="customSize" width="434" height="421"/>
+            <connections>
+                <outlet property="inquiererFullNameLabel" destination="oBc-iH-5kw" id="q8G-I4-5Te"/>
+                <outlet property="inquiererProfilePicture" destination="l0i-ed-Aoe" id="vB2-0P-MhP"/>
+                <outlet property="questionLabel" destination="aVq-JQ-uNo" id="zQ2-aT-9lW"/>
+            </connections>
+            <point key="canvasLocation" x="116" y="154.5"/>
         </collectionViewCell>
     </objects>
 </document>

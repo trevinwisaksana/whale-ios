@@ -22,8 +22,6 @@
 		DD07A7521E8047DC0095B013 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7511E8047DC0095B013 /* APIClient.swift */; };
 		DD07A7541E8049440095B013 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7531E8049440095B013 /* AnswerCell.swift */; };
 		DD07A7571E804E4D0095B013 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7561E804E4D0095B013 /* Router.swift */; };
-		DD07A75A1E804EC50095B013 /* AnswerViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7591E804EC50095B013 /* AnswerViewCellModel.swift */; };
-		DD07A75C1E804EE40095B013 /* ActivityViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A75B1E804EE40095B013 /* ActivityViewCellModel.swift */; };
 		DD07A75E1E804F920095B013 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A75D1E804F920095B013 /* ActivityCell.swift */; };
 		DD07A7621E80545C0095B013 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7611E80545C0095B013 /* ProfileViewController.swift */; };
 		DD07A7651E8057580095B013 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7641E8057580095B013 /* SignUpViewController.swift */; };
@@ -31,8 +29,13 @@
 		DD07A76B1E82ECD10095B013 /* AnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD07A76A1E82ECD10095B013 /* AnswerCell.xib */; };
 		DD07A76D1E82ECDB0095B013 /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD07A76C1E82ECDB0095B013 /* ActivityCell.xib */; };
 		DD07A7701E82F0BC0095B013 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A76F1E82F0BC0095B013 /* DesignableView.swift */; };
-		DD07A7721E82F12A0095B013 /* UserHeadersAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7711E82F12A0095B013 /* UserHeadersAdapter.swift */; };
-		DD07A7761E82F49B0095B013 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7751E82F49B0095B013 /* UserModel.swift */; };
+		DD07A7761E82F49B0095B013 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07A7751E82F49B0095B013 /* User.swift */; };
+		DD0CD57B1E8ECFF400FE11C7 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0CD57A1E8ECFF400FE11C7 /* Answer.swift */; };
+		DD0CD57D1E8ED11600FE11C7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0CD57C1E8ED11600FE11C7 /* Question.swift */; };
+		DD0CD57F1E8ED1B400FE11C7 /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0CD57E1E8ED1B400FE11C7 /* PageData.swift */; };
+		DD98922D1E92C44900C4CED2 /* AuthHeadersAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98922C1E92C44900C4CED2 /* AuthHeadersAdapter.swift */; };
+		DDBC0C5B1E904B1200851563 /* AnswerViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC0C5A1E904B1200851563 /* AnswerViewController+CollectionView.swift */; };
+		DDBC0C5D1E904D9900851563 /* AnswerCell+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC0C5C1E904D9900851563 /* AnswerCell+Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,8 +81,6 @@
 		DD07A7511E8047DC0095B013 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		DD07A7531E8049440095B013 /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		DD07A7561E804E4D0095B013 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		DD07A7591E804EC50095B013 /* AnswerViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewCellModel.swift; sourceTree = "<group>"; };
-		DD07A75B1E804EE40095B013 /* ActivityViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewCellModel.swift; sourceTree = "<group>"; };
 		DD07A75D1E804F920095B013 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		DD07A7611E80545C0095B013 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DD07A7641E8057580095B013 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +88,15 @@
 		DD07A76A1E82ECD10095B013 /* AnswerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerCell.xib; sourceTree = "<group>"; };
 		DD07A76C1E82ECDB0095B013 /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
 		DD07A76F1E82F0BC0095B013 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
-		DD07A7711E82F12A0095B013 /* UserHeadersAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHeadersAdapter.swift; sourceTree = "<group>"; };
-		DD07A7751E82F49B0095B013 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		DD07A7751E82F49B0095B013 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DD0CD5791E8ECADC00FE11C7 /* DistributingInformation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DistributingInformation.playground; sourceTree = "<group>"; };
+		DD0CD57A1E8ECFF400FE11C7 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		DD0CD57C1E8ED11600FE11C7 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		DD0CD57E1E8ED1B400FE11C7 /* PageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
+		DD7FD11F1E8D80A300447458 /* whale-ios-trevin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "whale-ios-trevin.entitlements"; sourceTree = "<group>"; };
+		DD98922C1E92C44900C4CED2 /* AuthHeadersAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthHeadersAdapter.swift; sourceTree = "<group>"; };
+		DDBC0C5A1E904B1200851563 /* AnswerViewController+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnswerViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		DDBC0C5C1E904D9900851563 /* AnswerCell+Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnswerCell+Configuration.swift"; sourceTree = "<group>"; };
 		F9ECED1C45D6818B4D638B97 /* Pods_whale_ios_trevinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_ios_trevinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD717ACDD4188A2B2172313F /* Pods_whale_ios_trevin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whale_ios_trevin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +157,7 @@
 			children = (
 				DD07A7101E8046470095B013 /* whale-ios-trevin */,
 				DD07A7111E8046470095B013 /* AppDelegate.swift */,
+				DD0CD5791E8ECADC00FE11C7 /* DistributingInformation.playground */,
 				DD07A7281E8046470095B013 /* whale-ios-trevinTests */,
 				DD07A7331E8046470095B013 /* whale-ios-trevinUITests */,
 				DD07A70F1E8046470095B013 /* Products */,
@@ -170,6 +179,7 @@
 		DD07A7101E8046470095B013 /* whale-ios-trevin */ = {
 			isa = PBXGroup;
 			children = (
+				DD7FD11F1E8D80A300447458 /* whale-ios-trevin.entitlements */,
 				DD07A7421E8046A20095B013 /* Extensions */,
 				DD07A7431E8046A90095B013 /* UI */,
 				DD07A74D1E80474F0095B013 /* Networking */,
@@ -248,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				DD07A7491E8047220095B013 /* AnswerViewController.swift */,
+				DDBC0C5A1E904B1200851563 /* AnswerViewController+CollectionView.swift */,
 			);
 			name = "Answer Scene";
 			sourceTree = "<group>";
@@ -263,7 +274,7 @@
 		DD07A74D1E80474F0095B013 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				DD07A7711E82F12A0095B013 /* UserHeadersAdapter.swift */,
+				DD98922C1E92C44900C4CED2 /* AuthHeadersAdapter.swift */,
 				DD07A7561E804E4D0095B013 /* Router.swift */,
 				DD07A7511E8047DC0095B013 /* APIClient.swift */,
 				DD07A7581E804EB20095B013 /* Models */,
@@ -285,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				DD07A7531E8049440095B013 /* AnswerCell.swift */,
+				DDBC0C5C1E904D9900851563 /* AnswerCell+Configuration.swift */,
 				DD07A76A1E82ECD10095B013 /* AnswerCell.xib */,
 			);
 			name = AnswerCell;
@@ -293,9 +305,10 @@
 		DD07A7581E804EB20095B013 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DD07A7591E804EC50095B013 /* AnswerViewCellModel.swift */,
-				DD07A75B1E804EE40095B013 /* ActivityViewCellModel.swift */,
-				DD07A7751E82F49B0095B013 /* UserModel.swift */,
+				DD07A7751E82F49B0095B013 /* User.swift */,
+				DD0CD57A1E8ECFF400FE11C7 /* Answer.swift */,
+				DD0CD57E1E8ED1B400FE11C7 /* PageData.swift */,
+				DD0CD57C1E8ED11600FE11C7 /* Question.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -420,6 +433,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 9ME882KZTA;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					DD07A7241E8046470095B013 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -630,18 +648,21 @@
 				DD07A7571E804E4D0095B013 /* Router.swift in Sources */,
 				DD07A74A1E8047220095B013 /* AnswerViewController.swift in Sources */,
 				DD07A75E1E804F920095B013 /* ActivityCell.swift in Sources */,
+				DD0CD57D1E8ED11600FE11C7 /* Question.swift in Sources */,
 				DD07A71A1E8046470095B013 /* whale_ios_trevin.xcdatamodeld in Sources */,
 				DD07A7701E82F0BC0095B013 /* DesignableView.swift in Sources */,
-				DD07A75C1E804EE40095B013 /* ActivityViewCellModel.swift in Sources */,
+				DD0CD57B1E8ECFF400FE11C7 /* Answer.swift in Sources */,
+				DDBC0C5D1E904D9900851563 /* AnswerCell+Configuration.swift in Sources */,
 				DD07A7671E8057640095B013 /* SignInViewController.swift in Sources */,
-				DD07A7761E82F49B0095B013 /* UserModel.swift in Sources */,
+				DD07A7761E82F49B0095B013 /* User.swift in Sources */,
 				DD07A74C1E8047350095B013 /* ActivityViewController.swift in Sources */,
 				DD07A7651E8057580095B013 /* SignUpViewController.swift in Sources */,
 				DD07A7121E8046470095B013 /* AppDelegate.swift in Sources */,
 				DD07A7621E80545C0095B013 /* ProfileViewController.swift in Sources */,
-				DD07A7721E82F12A0095B013 /* UserHeadersAdapter.swift in Sources */,
+				DDBC0C5B1E904B1200851563 /* AnswerViewController+CollectionView.swift in Sources */,
 				DD07A7541E8049440095B013 /* AnswerCell.swift in Sources */,
-				DD07A75A1E804EC50095B013 /* AnswerViewCellModel.swift in Sources */,
+				DD0CD57F1E8ED1B400FE11C7 /* PageData.swift in Sources */,
+				DD98922D1E92C44900C4CED2 /* AuthHeadersAdapter.swift in Sources */,
 				DD07A7521E8047DC0095B013 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -793,6 +814,7 @@
 			baseConfigurationReference = DBF2AC1C842434A83EB159F3 /* Pods-whale-ios-trevin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "whale-ios-trevin/whale-ios-trevin.entitlements";
 				DEVELOPMENT_TEAM = 9ME882KZTA;
 				INFOPLIST_FILE = "whale-ios-trevin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -807,6 +829,7 @@
 			baseConfigurationReference = 34417457DDBB0D36A317C8F3 /* Pods-whale-ios-trevin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "whale-ios-trevin/whale-ios-trevin.entitlements";
 				DEVELOPMENT_TEAM = 9ME882KZTA;
 				INFOPLIST_FILE = "whale-ios-trevin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

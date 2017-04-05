@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.3.0)
+  - KeychainSwift (7.0.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -7,14 +8,16 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - KeychainSwift (~> 7.0)
   - SDWebImage (~> 3.8)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  KeychainSwift: b6947435dd78cc442c64a84ae648dd0e871cf448
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 37e3437bccb47614208cbae3c37326f6f0b2f5e4
+PODFILE CHECKSUM: d6b19a9e5f16fb280eada5fcad9f1323addd63a0
 
 COCOAPODS: 1.2.0

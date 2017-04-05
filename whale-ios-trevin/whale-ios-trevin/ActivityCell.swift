@@ -10,14 +10,6 @@ import UIKit
 
 class ActivityCell: UICollectionViewCell {
     
-    // IBOutlets
     
-    
-    //
-    var activityCellViewModel: ActivityViewCellModel? {
-        didSet {
-            
-        }
-    }
     
 }
