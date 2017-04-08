@@ -7,20 +7,17 @@
 //
 
 import Foundation
-import SwiftyJSON
 
-/*
-struct PageData<T> {
-    let totalPages: Int = 0
-    let pageSize: Int = 3
-    let currentPage: Int = 0
-    let data: [T]
+struct PageData {
     
-    init?(json: JSON) {
-        guard let pageData: [T] = json["data"].array else { return nil }
-        self.data = pageData
+    // For pagination
+    let pageSize: Int
+    var pageNumber: Int
+    
+    init(pageNumber: Int, pageSize: Int) {
+        self.pageSize = pageSize
+        self.pageNumber = pageNumber
     }
-
+    
 }
-*/
 

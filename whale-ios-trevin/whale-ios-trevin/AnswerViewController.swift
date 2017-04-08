@@ -18,11 +18,11 @@ class AnswerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        APIClient.instance.getAnswers(pageSize: APIClient.pageSize, pageNumber: APIClient.pageNumber) { [weak self] (answers) in
+        APIClient.instance.getAnswers { [unowned self] (answers) in
             // Assigning the answers to the array
-            self?.listOfAnswers = answers
+            self.listOfAnswers = answers
             // Refresh the collection view
-            self?.answersCollectionView.reloadData()
+            self.answersCollectionView.reloadData()
         }
         
     }

@@ -33,6 +33,7 @@
 		DD0CD57B1E8ECFF400FE11C7 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0CD57A1E8ECFF400FE11C7 /* Answer.swift */; };
 		DD0CD57D1E8ED11600FE11C7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0CD57C1E8ED11600FE11C7 /* Question.swift */; };
 		DD0CD57F1E8ED1B400FE11C7 /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0CD57E1E8ED1B400FE11C7 /* PageData.swift */; };
+		DD41D58F1E9808E4008A3A09 /* ImageView+Cicularize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD41D58E1E9808E4008A3A09 /* ImageView+Cicularize.swift */; };
 		DD98922D1E92C44900C4CED2 /* AuthHeadersAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98922C1E92C44900C4CED2 /* AuthHeadersAdapter.swift */; };
 		DDBC0C5B1E904B1200851563 /* AnswerViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC0C5A1E904B1200851563 /* AnswerViewController+CollectionView.swift */; };
 		DDBC0C5D1E904D9900851563 /* AnswerCell+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC0C5C1E904D9900851563 /* AnswerCell+Configuration.swift */; };
@@ -89,10 +90,10 @@
 		DD07A76C1E82ECDB0095B013 /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
 		DD07A76F1E82F0BC0095B013 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		DD07A7751E82F49B0095B013 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		DD0CD5791E8ECADC00FE11C7 /* DistributingInformation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DistributingInformation.playground; sourceTree = "<group>"; };
 		DD0CD57A1E8ECFF400FE11C7 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		DD0CD57C1E8ED11600FE11C7 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		DD0CD57E1E8ED1B400FE11C7 /* PageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
+		DD41D58E1E9808E4008A3A09 /* ImageView+Cicularize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageView+Cicularize.swift"; sourceTree = "<group>"; };
 		DD7FD11F1E8D80A300447458 /* whale-ios-trevin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "whale-ios-trevin.entitlements"; sourceTree = "<group>"; };
 		DD98922C1E92C44900C4CED2 /* AuthHeadersAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthHeadersAdapter.swift; sourceTree = "<group>"; };
 		DDBC0C5A1E904B1200851563 /* AnswerViewController+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnswerViewController+CollectionView.swift"; sourceTree = "<group>"; };
@@ -157,7 +158,6 @@
 			children = (
 				DD07A7101E8046470095B013 /* whale-ios-trevin */,
 				DD07A7111E8046470095B013 /* AppDelegate.swift */,
-				DD0CD5791E8ECADC00FE11C7 /* DistributingInformation.playground */,
 				DD07A7281E8046470095B013 /* whale-ios-trevinTests */,
 				DD07A7331E8046470095B013 /* whale-ios-trevinUITests */,
 				DD07A70F1E8046470095B013 /* Products */,
@@ -209,6 +209,7 @@
 		DD07A7421E8046A20095B013 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DD41D58E1E9808E4008A3A09 /* ImageView+Cicularize.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -655,6 +656,7 @@
 				DDBC0C5D1E904D9900851563 /* AnswerCell+Configuration.swift in Sources */,
 				DD07A7671E8057640095B013 /* SignInViewController.swift in Sources */,
 				DD07A7761E82F49B0095B013 /* User.swift in Sources */,
+				DD41D58F1E9808E4008A3A09 /* ImageView+Cicularize.swift in Sources */,
 				DD07A74C1E8047350095B013 /* ActivityViewController.swift in Sources */,
 				DD07A7651E8057580095B013 /* SignUpViewController.swift in Sources */,
 				DD07A7121E8046470095B013 /* AppDelegate.swift in Sources */,

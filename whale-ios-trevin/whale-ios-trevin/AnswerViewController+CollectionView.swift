@@ -30,6 +30,12 @@ extension AnswerViewController: UICollectionViewDataSource, UICollectionViewDele
         
     }
     
+    /*
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return collectionViewLayout.collectionViewContentSize
+    }
+    */
+ 
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         
@@ -37,6 +43,8 @@ extension AnswerViewController: UICollectionViewDataSource, UICollectionViewDele
         let contentOffsetY = scrollView.contentOffset.y
         let scrollViewHeight = scrollView.frame.size.height
         let contentSizeHeight = scrollView.contentSize.height
+        
+        var isLoadingNewData: Bool = false
     
         // When reaching the bottom, refresh
         if scrollView == answersCollectionView {
@@ -44,19 +52,17 @@ extension AnswerViewController: UICollectionViewDataSource, UICollectionViewDele
             if (contentOffsetY + scrollViewHeight) >= contentSizeHeight
             {
                 // Prevents the new data from being called when user refreshes multiple times
-                if APIClient.isLoadingNewData == false {
+                if isLoadingNewData == false {
                     // Loading new data
-                    APIClient.isLoadingNewData = true
+                    isLoadingNewData = true
                     // Getting the new data
-                    APIClient.instance.getAnswers(pageSize: APIClient.pageSize, pageNumber: APIClient.pageNumber) { [weak self] (answers) in
+                    APIClient.instance.getAnswers { [weak self] (answers) in
                         // Appending the answers to the array
                         self?.listOfAnswers.append(contentsOf: answers)
                         // Refresh the collection view
                         self?.answersCollectionView.reloadData()
-                        // Changing the page number
-                        APIClient.pageNumber += 1
                         // Allowing the refresh to happen multiple times
-                        APIClient.isLoadingNewData = false
+                        isLoadingNewData = false
                     }
                 }
             }

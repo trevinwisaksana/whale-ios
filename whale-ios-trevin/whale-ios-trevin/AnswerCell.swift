@@ -16,4 +16,8 @@ class AnswerCell: UICollectionViewCell {
     
     @IBOutlet weak var questionLabel: UILabel!
     
+    @IBOutlet weak var videoImageView: UIImageView!
+    
 }
+
+

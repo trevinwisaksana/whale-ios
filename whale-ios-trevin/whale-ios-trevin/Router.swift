@@ -90,7 +90,7 @@ enum Router: URLRequestConvertible {
                 
             case .getAnswers(let per_page, let intpage):
                 return ["per_page" : per_page,
-                        "Intpage" : intpage]
+                        "page" : intpage]
                 
             case .createUser(let first_name, let last_name, let email, let password, let username):
                 return ["first_name": first_name,

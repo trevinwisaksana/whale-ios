@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 extension AnswerCell {
     
@@ -16,8 +17,15 @@ extension AnswerCell {
      the cell.
     */
     func configure(with data: Answer) {
-        self.questionLabel.text = data.content
+        
+        self.questionLabel.text = data.question
         self.inquiererFullNameLabel.text = "\(data.inquirerFirstName) \(data.inquirerLastName)"
+        
+        self.inquiererProfilePicture.sd_setImage(with: data.profileImageURL)
+        self.videoImageView.sd_setImage(with: data.thumbnailURL)
+        
+        // Circularizing inquirer profile picture
+        self.inquiererProfilePicture.circularize()
         
     }
     

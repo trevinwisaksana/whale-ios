@@ -11,41 +11,44 @@ import SwiftyJSON
 
 struct Answer {
     
-    var question: [String : JSON]
     var inquirerFirstName: String
     var inquirerLastName: String
     var username: String
-    // var thumbnail_url: String
-    // var likesCount: Int?
-    // var videoURL: String
-    var content: String
+    var profileImageURL: URL
+    var thumbnailURL: URL
+    var likesCount: Int?
+    var videoURL: URL
+    var question: String
     
     init?(json: JSON) {
         
-        // guard let videoURL = data["video_url"]?.string else { return nil }
+        guard let thumbnailURL: URL = json["thumbnail_url"].url else { return nil }
         
-        // guard let likesCount = data["likes_count"]?.int else { return nil }
+        guard let videoURL: URL = json["video_url"].url else { return nil }
         
-        guard let question: [String : JSON] = json["question"].dictionary else { fatalError("Question not found") }
+        guard let questionData: [String : JSON] = json["question"].dictionary else { return nil }
+        
+        guard let content: String = questionData["content"]?.string else { return nil }
 
+        guard let sender: [String : JSON] = questionData["sender"]?.dictionary else { return nil }
         
-        guard let sender: [String : Any] = question["sender"]?.dictionaryObject else { fatalError("Sender not found") }
+        guard let username: String = sender["username"]?.string else { return nil }
         
-        guard let username: String = sender["username"] as? String else { return nil }
+        guard let lastName: String = sender["last_name"]?.string else { return nil }
         
-        guard let lastName: String = sender["last_name"] as? String else { return nil }
+        guard let firstName: String = sender["first_name"]?.string else { return nil }
         
-        guard let firstName: String = sender["first_name"] as? String else { return nil }
+        guard let imageURL: URL = sender["image_url"]?.url else { return nil }
         
-        guard let content: String = question["content"]?.string else { return nil }
+        let likesCount = json["likes_count"].int
         
-        self.question = question
+        self.question = content
         self.inquirerFirstName = firstName
         self.inquirerLastName = lastName
-        // self.thumbnail_url = thumbnail_url
-        // self.likesCount = likesCount
-        // self.videoURL = videoURL
-        self.content = content
+        self.likesCount = likesCount
+        self.videoURL = videoURL
+        self.profileImageURL = imageURL
+        self.thumbnailURL = thumbnailURL
         self.username = username
         
     }

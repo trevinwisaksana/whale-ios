@@ -15,10 +15,7 @@ class APIClient {
     
     static let instance = APIClient()
     
-    // For pagination
-    static var pageSize: Int = 5
-    static var pageNumber: Int = 0
-    static var isLoadingNewData: Bool = false
+    fileprivate var pageData = PageData(pageNumber: 0, pageSize: 5)
     
     fileprivate let sessionManager = Alamofire.SessionManager.default
     fileprivate let keychain = KeychainSwift()
@@ -93,9 +90,9 @@ class APIClient {
     }
     
     // MARK: - Get Answers
-    func getAnswers(pageSize: Int, pageNumber: Int, completion: (([Answer]) -> Void)?) {
+    func getAnswers(completion: (([Answer]) -> Void)?) {
         
-        let urlRequestConvertible = Router.getAnswers(perPage: pageSize, intpage: pageNumber)
+        let urlRequestConvertible = Router.getAnswers(perPage: pageData.pageSize, intpage: pageData.pageNumber)
         
         sessionManager.request(urlRequestConvertible).validate().responseJSON { (response) in
             switch response.result {
@@ -108,16 +105,15 @@ class APIClient {
                     fatalError("Data could not be found")
                 }
                 
-                // Testing
-                print("data: ", data)
-                
                 // Flat mapping the json to initialize the answer
                 /*
                  Similar to json.flatMap { data in Answer(json: data) }
                  */
                 let answers: [Answer] = data.flatMap(Answer.init)
-                // Testing
-                print("Answers: ", answers)
+                
+                // Changing the page number
+                self.pageData.pageNumber += 1
+            
                 // Returning te array of answers
                 completion?(answers)
                 
