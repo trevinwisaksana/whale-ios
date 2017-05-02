@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension AnswerViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension AnswersViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -29,12 +29,6 @@ extension AnswerViewController: UICollectionViewDataSource, UICollectionViewDele
         return cell
         
     }
-    
-    /*
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return collectionViewLayout.collectionViewContentSize
-    }
-    */
  
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
@@ -68,5 +62,5 @@ extension AnswerViewController: UICollectionViewDataSource, UICollectionViewDele
             }
         }
     }
-    
+
 }

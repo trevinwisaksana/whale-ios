@@ -18,6 +18,7 @@ class AnswerCell: UICollectionViewCell {
     
     @IBOutlet weak var videoImageView: UIImageView!
     
+    
 }
 
 

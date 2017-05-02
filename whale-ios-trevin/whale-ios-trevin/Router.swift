@@ -18,11 +18,12 @@ enum Router: URLRequestConvertible {
     case getUsers
     
     case getAnswers(perPage: Int,
-                    intpage: Int)
+                    page: Int)
     
     case getAnswerComments(String)
     case getAnswerLikes(String)
-    case getMyQuestions
+    case getMyQuestions(perPage: Int,
+                        page: Int)
 
     case createUser(firstName: String,
                     lastName: String,
@@ -84,13 +85,16 @@ enum Router: URLRequestConvertible {
             switch self {
             case .getUsers,
                  .getAnswerComments,
-                 .getAnswerLikes,
-                 .getMyQuestions:
+                 .getAnswerLikes:
                 return [:]
                 
-            case .getAnswers(let per_page, let intpage):
+            case .getMyQuestions(let per_page, let page):
                 return ["per_page" : per_page,
-                        "page" : intpage]
+                        "page" : page]
+                
+            case .getAnswers(let per_page, let page):
+                return ["per_page" : per_page,
+                        "page" : page]
                 
             case .createUser(let first_name, let last_name, let email, let password, let username):
                 return ["first_name": first_name,

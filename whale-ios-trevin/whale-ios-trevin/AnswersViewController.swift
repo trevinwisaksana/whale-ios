@@ -8,12 +8,13 @@
 
 import UIKit
 
-class AnswerViewController: UIViewController {
+class AnswersViewController: UIViewController {
     
     @IBOutlet weak var answersCollectionView: UICollectionView!
     
     // Contains all the answer models
     var listOfAnswers: [Answer] = []
+    var indexOfCellTapped = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class AnswerViewController: UIViewController {
             // Refresh the collection view
             self.answersCollectionView.reloadData()
         }
-        
+    
     }
     
 }

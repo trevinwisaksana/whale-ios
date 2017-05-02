@@ -92,7 +92,7 @@ class APIClient {
     // MARK: - Get Answers
     func getAnswers(completion: (([Answer]) -> Void)?) {
         
-        let urlRequestConvertible = Router.getAnswers(perPage: pageData.pageSize, intpage: pageData.pageNumber)
+        let urlRequestConvertible = Router.getAnswers(perPage: pageData.pageSize, page: pageData.pageNumber)
         
         sessionManager.request(urlRequestConvertible).validate().responseJSON { (response) in
             switch response.result {
@@ -108,7 +108,7 @@ class APIClient {
                 // Flat mapping the json to initialize the answer
                 /*
                  Similar to json.flatMap { data in Answer(json: data) }
-                 */
+                */
                 let answers: [Answer] = data.flatMap(Answer.init)
                 
                 // Changing the page number
@@ -124,6 +124,44 @@ class APIClient {
         }
         
     }
+    
+    
+    func getQuestions(completion: (([Question]) -> Void)?) {
+        
+        let urlRequestConvertible = Router.getMyQuestions(perPage: pageData.pageSize, page: pageData.pageNumber)
+        
+        sessionManager.request(urlRequestConvertible).validate().responseJSON { (response) in
+            switch response.result {
+            case .success(let value):
+                
+                // Placing the guard as the json cannot be an optional to be flat mapped
+                let json = JSON(value)
+                
+                guard let data = json["data"].array else {
+                    fatalError("Data could not be found")
+                }
+                
+                // Flat mapping the json to initialize the answer
+                /*
+                 Similar to json.flatMap { data in Question(json: data) }
+                 */
+                let questions: [Question] = data.flatMap(Question.init)
+                
+                // Changing the page number
+                self.pageData.pageNumber += 1
+                
+                // Returning te array of answers
+                completion?(questions)
+                
+            case .failure(let error):
+                // TODO: Show user alert
+                print("Error: ", error)
+                
+            }
+        }
+        
+    }
+
     
     // TODO: Create a generic request
     static func getData<T>(request: Router, completion: @escaping ([T]) -> Void?) {
