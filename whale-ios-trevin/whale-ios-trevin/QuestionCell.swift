@@ -32,22 +32,4 @@ class QuestionCell: UICollectionViewCell {
         
     }
     
-    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
-        
-        super.preferredLayoutAttributesFitting(layoutAttributes)
-        
-        let attributes = layoutAttributes.copy() as! UICollectionViewLayoutAttributes
-        
-        let desiredHeight = self.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
-        
-        attributes.size.height = desiredHeight
-        
-        setNeedsLayout()
-        setNeedsDisplay()
-        
-        return attributes
-        
-    }
-    
-    
 }

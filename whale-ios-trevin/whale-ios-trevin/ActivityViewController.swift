@@ -19,15 +19,6 @@ class ActivityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 90)
-        layout.estimatedItemSize = CGSize(width: UIScreen.main.bounds.width, height: 90)
-        
-        layout.minimumInteritemSpacing = 8
-        layout.minimumLineSpacing = 8
-        
-        questionsCollectionView.collectionViewLayout = layout
-        
         APIClient.instance.getQuestions { [unowned self] (questions) in
             // Assigning the answers to the array
             self.listOfQuestions = questions
